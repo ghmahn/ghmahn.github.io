@@ -19,9 +19,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="description" content="МСБИТ - ИТ-помощь малому и среднему бизнесу">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>Material Design Lite</title>
+    <title>МСБИТ - ИТ-помощь малому и среднему бизнесу</title>
 
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
@@ -30,7 +30,7 @@
     <!-- Add to homescreen for Safari on iOS -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    <meta name="apple-mobile-web-app-title" content="МСБИТ - ИТ-помощь малому и среднему бизнесу">
     <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
 
     <!-- Tile icon for Win8 (144x144 + tile color) -->
@@ -44,10 +44,9 @@
     <link rel="canonical" href="http://www.example.com/">
     -->
 
-<<<<<<< HEAD
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.deep_purple-pink.min.css">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.blue_grey-blue.min.css">
     <link rel="stylesheet" href="styles.css">
     <style>
     #view-source {
@@ -62,50 +61,89 @@
     </style>
   </head>
   <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
+    <div class="mdl-layout mdl-js-layout mdl-layout--no-desktop-drawer-button">
+      <header class="mdl-layout__header mdl-layout__header--waterfall mdl-layout__header--waterfall-hide-top mdl-color--primary">
         <div class="mdl-layout--large-screen-only mdl-layout__header-row">
         </div>
         <div class="mdl-layout--large-screen-only mdl-layout__header-row">
-          <h3>Name &amp; Title</h3>
+          <div class="mdl-layout-spacer"></div><h3>МСБИТ - ИТ-помощь малому и среднему бизнесу</h3>
+          <div class="mdl-layout-spacer"></div>
         </div>
         <div class="mdl-layout--large-screen-only mdl-layout__header-row">
         </div>
         <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
-          <a href="#overview" class="mdl-layout__tab is-active">Overview</a>
-          <a href="#features" class="mdl-layout__tab">Features</a>
-          <a href="#features" class="mdl-layout__tab">Details</a>
-          <a href="#features" class="mdl-layout__tab">Technology</a>
-          <a href="#features" class="mdl-layout__tab">FAQ</a>
-          <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--4dp mdl-color--accent" id="add">
+              <a href="#overview" class="mdl-layout__tab is-active" id="overview_tab">Обзор</a>
+              <a href="#features" class="mdl-layout__tab" id="features_tab">Услуги</a>
+              <a href="#details" class="mdl-layout__tab" id="details_tab">Подробно</a>
+              <a href="#technology" class="mdl-layout__tab" id="technology_tab">Технологии</a>
+              <a href="#faq" class="mdl-layout__tab" id="faq_tab">Часто задаваемые вопросы</a>
+              <a href="#contact" class="mdl-layout__tab" id="contact_tab">Контакты</a>
+        </div>
+
+          <!--<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--4dp mdl-color--accent" id="add">
             <i class="material-icons" role="presentation">add</i>
             <span class="visuallyhidden">Add</span>
-          </button>
-        </div>
+          </button>-->
       </header>
+      <div class="mdl-layout__drawer">
+       <span class="mdl-layout__title">МСБИТ</span>
+        <nav class="mdl-navigation">
+          <a href="#overview" class="mdl-navigation__link" onclick="document.getElementById('overview_tab').click(); document.querySelector('.mdl-layout').MaterialLayout.toggleDrawer()">Обзор</a>
+          <a href="#features" class="mdl-navigation__link" onclick="document.getElementById('features_tab').click(); document.querySelector('.mdl-layout').MaterialLayout.toggleDrawer()">Услуги</a>
+          <a href="#details" class="mdl-navigation__link" onclick="document.getElementById('details_tab').click(); document.querySelector('.mdl-layout').MaterialLayout.toggleDrawer()">Подробно</a>
+          <a href="#technology" class="mdl-navigation__link" onclick="document.getElementById('technology_tab').click(); document.querySelector('.mdl-layout').MaterialLayout.toggleDrawer()">Технологии</a>
+          <a href="#faq" class="mdl-navigation__link" onclick="document.getElementById('faq_tab').click(); document.querySelector('.mdl-layout').MaterialLayout.toggleDrawer()">Часто задаваемые вопросы</a>
+          <a href="#contact" class="mdl-navigation__link" onclick="document.getElementById('contact_tab').click(); document.querySelector('.mdl-layout').MaterialLayout.toggleDrawer()">Контакты</a>
+        </nav>
+      </div>
       <main class="mdl-layout__content">
         <div class="mdl-layout__tab-panel is-active" id="overview">
           <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+            <!-- <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
               <i class="material-icons">play_circle_filled</i>
-            </header>
-            <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+            </header> -->
+            <div class="mdl-card mdl-cell mdl-cell--12-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone">
               <div class="mdl-card__supporting-text">
-                <h4>Features</h4>
-                Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Nostrud in laboris labore nisi amet do dolor eu fugiat consectetur elit cillum esse.
+                <h4>Обзор</h4>
+                Здравствуйте.
+                Сегодня рынок труда в сфере информационных технологий переполнен системными администраторами. Часто это специалисты c неполным образованием, небольшим опытом работы, без достаточных знаний. Безусловно такие сотрудники обходятся дешевле и находятся проще, чем высококвалифицированный и опытный специалист.
+                И их работу на предприятии я считаю оправданной, но в одном и только в одном случае - деятельность этого сотрудника периодически и тщательно контролируется.
+                Поэтому я предлагаю свои услуги в консультировании и поддержке в области информационных технологий.
               </div>
               <div class="mdl-card__actions">
-                <a href="#" class="mdl-button">Read our features</a>
+                <a href="#" class="mdl-button" onclick="document.getElementById('features_tab').click()">Подробнее о моих услугах</a>
               </div>
             </div>
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn1">
+          </section>
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone">
+              <div class="mdl-card__supporting-text">
+                <h4>Мои клиенты</h4>
+                <p>Мои клиенты - это фирмы, желающие получить и сохранить современную ИТ-инфраструктуру.</p> Ее ключевые показатели для меня:<ul>
+                <li>Своевременное, надёжное архивирование данных.</li>
+                <li>Достаточное обеспечение информационной безопасности - адекватная антивирусная защита, защита от вторжений и утечек.</li>
+                <li>Достаточный контроль за пользователями с точки зрения как сохранения коммерческой тайны, так и трудовой дисциплины.</li>
+                <li>Отказоустойчивость основных сервисов - информационные системы (например, 1С), общая работа с файлами, почта и т.п.</li>
+                <li>Способность удовлетворять требования и запросы бизнеса сейчас и завтра без лишних затрат</li>
+                </ul>
+
+                <p>Задумайтесь, насколько соответствует ваше предприятие и системный администратор данным критериям?</p>
+              </div>
+              <div class="mdl-card__actions">
+                <a href="#" class="mdl-button" onclick="document.getElementById('details_tab').click()">Если не очень - читайте: Как я могу вам помочь</a>
+              </div>
+              <!-- <div class="mdl-card__actions">
+                <a href="#" class="mdl-button">Read our features</a>
+              </div> -->
+            </div>
+            <!--<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="btn1">
               <i class="material-icons">more_vert</i>
             </button>
             <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right" for="btn1">
               <li class="mdl-menu__item">Lorem</li>
               <li class="mdl-menu__item" disabled>Ipsum</li>
               <li class="mdl-menu__item">Dolor</li>
-            </ul>
+            </ul> -->
           </section>
           <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
             <div class="mdl-card mdl-cell mdl-cell--12-col">
@@ -195,14 +233,13 @@
                 <a href="#lorem4">Lorem ipsum</a>
                 <a href="#lorem5">Lorem ipsum</a>
               </ul>
-=======
 <ul>
 <li>Аудит текущей инфраструктуры, выводы и рекомендации по результатам</li>
 <li>Проверка знаний и опыта вашего системного администратора, рекомендации по результатам</li>
 <li>Непосредственно реализация рекомендаций</li>
 <li>Помощь вашему системному администратору в решении сложной проблемы</li>
 </ul>
->>>>>>> origin/master
+
 
               <h5 id="lorem1">Lorem ipsum dolor sit amet</h5>
               Excepteur et pariatur officia veniam anim culpa cupidatat consequat ad velit culpa est non.
@@ -300,7 +337,6 @@
         </footer>
       </main>
     </div>
-    <a href="https://github.com/google/material-design-lite/blob/master/templates/text-only/" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">View Source</a>
     <script src="https://code.getmdl.io/1.1.3/material.min.js"></script>
   </body>
 </html>
