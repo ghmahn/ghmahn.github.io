@@ -28,7 +28,10 @@ html, body {
 .mdl-demo .mdl-layout__tab-bar-button {
   display: none;
 }
-.mdl-demo .mdl-layout.is-small-screen .mdl-layout__tab-bar .mdl-button {
+.mdl-demo .mdl-layout.is-small-screen .mdl-layout__tab-bar-container .mdl-layout__tab-bar .mdl-button {
+  display: none;
+}
+.mdl-demo .mdl-layout.is-small-screen .mdl-layout__tab-bar-container {
   display: none;
 }
 .mdl-demo .mdl-layout:not(.is-small-screen) .mdl-layout__tab-bar,

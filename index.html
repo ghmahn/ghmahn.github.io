@@ -61,13 +61,15 @@
     </style>
   </head>
   <body class="mdl-demo mdl-color--grey-200 mdl-color-text--grey-700 mdl-base">
-    <div class="mdl-layout mdl-js-layout mdl-layout--no-desktop-drawer-button">
+    <div class="mdl-layout mdl-js-layout mdl-layout--no-desktop-drawer-button mdl-layout--fixed-header">
       <header class="mdl-layout__header mdl-layout__header--waterfall mdl-layout__header--waterfall-hide-top mdl-color--primary">
-        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
-          <div class="mdl-layout-spacer"></div><h3>МСБИТ - ИТ-помощь малому и среднему бизнесу</h3>
+        <div class="mdl-layout__header-row">
+          <div class="mdl-layout-spacer"></div>
+          <div class="mdl-layout--large-screen-only"><h3>МСБИТ - ИТ-помощь малому и среднему бизнесу</h3></div>
+          <div class="mdl-layout--small-screen-only"><h3>МСБИТ - ИТ-помощь бизнесу</h3></div>
           <div class="mdl-layout-spacer"></div>
         </div>
-        <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
+        <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark mdl-layout--large-screen-only">
               <a href="#overview" class="mdl-layout__tab is-active" id="overview_tab">Обзор</a>
               <a href="#features" class="mdl-layout__tab" id="features_tab">Услуги</a>
               <a href="#details" class="mdl-layout__tab" id="details_tab">Подробно</a>
@@ -144,7 +146,7 @@
                 <a href="#" class="mdl-button" onclick="document.getElementById('details_tab').click()">Подробнее</a>
               </div>
             </div>
-            <div class="mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--6-col-tablet mdl-cell--6-col-phone mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-shadow--2dp">
               <div class="mdl-card__supporting-text">
                 <h4>Более подробно о том, в чем я могу помочь уже работающему предприятию:</h4>
                   <ul>
@@ -155,7 +157,7 @@
                   </ul>
               </div>
             </div>
-            <div class="mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--6-col-tablet mdl-cell--6-col-phone mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--6-col-desktop mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-shadow--2dp">
               <div class="mdl-card__supporting-text">
                 <h4>И о том, что я могу сделать для открывающегося предприятия:</h4>
                 <ul>
@@ -176,7 +178,7 @@
               Я работаю в сфере ИТ с 2000 года. За время работы сталкивался с огромным количеством проблем и разнообразных задач, в результате был приобретен опыт в самых разных областях (от аппаратного обеспечения до создания архитектур баз данных и программирования прикладных программ). Около 10 лет работаю в руководящей должности, соответственно умею распределять задачи, ставить акценты. Естественно, мне приходилось много контактировать с владельцами бизнеса, другими отделами - поэтому мне просто найти язык с обычным пользователем или заказчиком . Им, в свою очередь, просто общаться со мной, я не использую специальной терминологии (если хотите терминов - загляните на страничку "Технологии"). Руководствуюсь принципом "В любой ситуации решение должно удовлетворять заказчика, ведь ИТ - это вспомогательная служба".
               </div>
             </div>
-            <div class="mdl-card mdl-cell mdl-shadow--2dp mdl-cell--12-col-desktop">
+            <div class="mdl-card mdl-cell mdl-shadow--2dp mdl-cell--12-col-desktop mdl-cell--12-col-tablet mdl-cell--12-col-phone">
               <div class="mdl-card__supporting-text">
                 <h4>Что конкретно я могу предложить?</h4> 
                 Для простоты разделю все услуги на темы:
@@ -188,24 +190,34 @@
                 Теперь расскажу подробнее.  
               </div>
             </div>
-            <div class="mdl-card mdl-cell mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-shadow--2dp mdl-cell--6-col-desktop mdl-cell--8-col-tablet mdl-cell--4-col-phone">
               <div class="mdl-card__supporting-text">
               <h4>Консультирование</h4>
               <ul>
-                <li><strong>Аудит</strong></li>
-                <li><strong>Собеседования</strong></li>
-                <li><strong>Общие вопросы</strong></li>
+                <li><strong>Аудит. </strong>Проверка существующей инфраструктуры на соответствие определенным требованиям, заполнение чек-листа, оценка и вынесение рекомендаций.</li>
+                <li><strong>Собеседования. </strong>Проверка кандидатов на знания, адекватность и соответствие должности в условиях конкретного предприятия.</li>
+                <li><strong>Общие вопросы. </strong>Любые вопросы от заказчика - совместный анализ, рекомендации.</li>
               </ul>
               </div>
             </div>
-            <div class="mdl-card mdl-cell mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-shadow--2dp mdl-cell--6-col-desktop mdl-cell--8-col-tablet mdl-cell--4-col-phone">
               <div class="mdl-card__supporting-text">
               <h4>Проектирование</h4>
+              <ul>
+                <li><strong>Составление тех.задания. </strong>Анализ задач, поставленных фирмой, детальное описание, согласование с заказчиком.</li>
+                <li><strong>Подготовка всего проекта. </strong>Подбор оборудования и программных решений под требования тех.задания, разработка архитектуры.</li>
+                <li><strong>Реализация проекта. </strong>Закупка оборудования, подготовка к эксплуатации, внедрение в эксплуатацию, написание документации.</li>
+              </ul>
               </div>
             </div>
-            <div class="mdl-card mdl-cell mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-shadow--2dp mdl-cell--6-col-desktop mdl-cell--8-col-tablet mdl-cell--4-col-phone">
               <div class="mdl-card__supporting-text">
               <h4>Решение проблем</h4>
+              С акцентом на:
+              <ul>
+                <li><strong>Конструктивный подход. </strong>Не будем ломать работающее, будем чинить поломанное и предупреждать такие поломки - от рекомендаций до регулярного обслуживания.</li>
+                <li><strong>Минимизация потерь бизнеса. </strong>Главное - запустить остановленные в результате сбоя процессы, потратив минимум времени и денег. Анализ и разбор полетов - потом.</li>
+              </ul>
               </div>
             </div>
           </section>
